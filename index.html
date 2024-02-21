@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo hidden sm:block">DBK</h1>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <!-- Header Section -->
+    <div class="header">
+      <div class="header-content container">
+        <h1 class="header-title">
+          <span class="up">HI!</span>
+          <span class="down">I am Dhanush Babu . K</span>
+        </h1>
+
+        <p class="header-subtitle" id="subtitle">FRONTEND WEB DEVELOPER</p>
+
+        <button class="btn btn-primary">
+          <a href="#projects">Visit My Works</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+
+    <section id="about" class="about-section m-2">
+      <div class="container">
+        <div
+          class="about-me-container flex flex-col sm:flex-row sm:place-content-evenly text-justify"
+        >
+          <div class="image-container">
+            <!-- Image goes here -->
+            <img src="" />
+          </div>
+          <div class="intro-container">
+            <h2 class="font-bold">About Me</h2>
+            <p>
+              I'm currently a third-year Computer Science and Engineering In
+              (Artificial Intelligence And Machine Learning ) student at Ramaiah
+              Instritute Of Technology, I'm really passionate about frontend
+              development and have been actively working on improving my skills
+              in HTML, CSS, JavaScript, and React. and Currently working on MERN
+              STACK. Throughout my academic journey, where I applied these
+              skills to create user-friendly and engaging web applications.
+              Additionally, my recent internship experience as a Software
+              Engineer Intern at Nexthink, where I focused on data labeling, has
+              further strengthened my problem-solving abilities and technical
+              skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="projects-container">
+          <div class="skills-education">
+            <h2>Skills & Education</h2>
+            <div class="skills m-4">
+              <h3 class="font-bold">Skills</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- Add more skills as needed -->
+              </ul>
+            </div>
+
+            <div class="education m-4">
+              <h3 class="font-bold">Education</h3>
+              <p>Bachelor's Degree in Computer Science</p>
+              <!-- Add more education details as needed -->
+            </div>
+          </div>
+          <!-- Divider -->
+          <div class="vertical-divider"></div>
+
+          <div class="projects">
+            <h2 class="font-bold">Projects</h2>
+            <div class="project">
+              <h3>Project 1</h3>
+              <p>Description of Project 1</p>
+            </div>
+            <div class="project">
+              <h3>Project 2</h3>
+              <p>Description of Project 2</p>
+            </div>
+            <!-- Add more projects as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact-section">
+      <div class="container flex flex-col sm:flex-row sm:place-content-evenly">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="send_email.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">
+            <a href="mailto:dhanushbabu1618@gmail.com" target="_blank"
+              >Mail Me</a
+            >
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Dhanush Babu K. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Array of subtitles
+      const subtitles = [
+        "FRONTEND WEB DEVELOPER",
+        "BACKEND WEB DEVELOPER",
+        "FULL STACK WEB DEVELOPER",
+      ];
+
+      // Function to change subtitle every 2 seconds
+      function changeSubtitle() {
+        const subtitleElement = document.getElementById("subtitle");
+        let index = 0;
+
+        setInterval(() => {
+          subtitleElement.classList.remove("fadeIn");
+          subtitleElement.textContent = subtitles[index];
+          subtitleElement.classList.add("fadeIn");
+          index = (index + 1) % subtitles.length;
+        }, 1500);
+      }
+
+      // Call the function to start changing subtitle
+      changeSubtitle();
+    </script>
+  </body>
+</html>

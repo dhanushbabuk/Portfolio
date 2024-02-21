@@ -1,0 +1,329 @@
+/* Navbar Styles */
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  background-color: #f9f9f9;
+  color: #007bff;
+  padding: 10px;
+  border-radius: 2px;
+  transform: rotate(-10deg);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu li a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+/* Header Section Styles */
+.header {
+  background-color: #f9f9f9;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  padding: 0;
+}
+
+.header-title .up {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.header-title .down {
+  color: #000;
+  margin-bottom: 0;
+  font-size: 55px;
+}
+
+.header-subtitle {
+  font-size: 24px;
+  opacity: 0.8;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  letter-spacing: 8px;
+  font-weight: 100;
+  display: block;
+  color: black;
+  margin-block-end: 1em;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn > a {
+  text-decoration: none;
+  color: white;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; /* Adjust container max-width for different screen sizes */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; /* Adjust container max-width for different screen sizes */
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; /* Adjust container max-width for different screen sizes */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; /* Adjust container max-width for different screen sizes */
+  }
+}
+
+/* About Me Section Styles */
+.about-section {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  line-height: 200%;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 50%; /* To make the image circular */
+}
+
+.intro-container {
+  flex: 2;
+}
+
+.intro-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.intro-container p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Projects Section Styles */
+.projects-section {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-education,
+.projects {
+  flex: 1;
+}
+
+.skills h3,
+.education h3,
+.projects h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.projects .project {
+  margin-bottom: 20px;
+}
+
+.projects .project h3 {
+  font-size: 20px;
+}
+
+.projects .project p {
+  color: #777;
+}
+
+/* Contact Me Section Styles */
+.contact-section {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navbar Hover Effects */
+.nav-menu li a:hover {
+  color: #ffd700; /* Change color on hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+/* Project Item Hover Effects */
+.projects .project:hover {
+  background-color: #f2f2f2; /* Light gray background on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+/* Contact Me Button Hover Effect */
+.contact-form button:hover {
+  background-color: #555; /* Darker background on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Vertical Divider Styles */
+.vertical-divider {
+  border-left: 1px solid black; /* Add a solid vertical line */
+  /* height: 50%; */
+  margin: 0 20px; /* Adjust margin as needed */
+}
+
+/* Projects Section Styles */
+.projects-section {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Display items in a column */
+}
+
+.project {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Add space between items */
+  }
+
+  .project {
+    width: calc(50% - 20px); /* Set project item width to 50% minus margin */
+  }
+}
+
+/* CSS Transition for Smooth Animation */
+.header-subtitle {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fadeIn {
+  opacity: 1;
+}
